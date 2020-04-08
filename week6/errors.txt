@@ -1,0 +1,4 @@
+Calling `foo` raised an error - None: Omg.. Provided a: 100
+Calling `foo` raised an error - Omg.: Omg.. Provided a: 100
+Calling `foo` raised an error - ValueError: Omg.. Provided a: 100
+Calling `foo` raised an error - ValueError: 'Omg.'. Provided a: 100
