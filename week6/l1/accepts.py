@@ -3,10 +3,10 @@ def accepts(*args):
     acc_args = args
 
     def inner(func):
-        def wrapper(*args):
+        def wrapper(*x):
             for i in range(len(acc_args)):
-                if not isinstance(args[i], acc_args[i]):
-                    raise TypeError("Argument {} of {} is not {}".format(args[i], func.__name__, acc_args[i].__name__))
+                if not isinstance(x[i], acc_args[i]):
+                    raise TypeError("Argument {} of {} is not {}".format(x[i], func.__name__, acc_args[i].__name__))
             print(func(*args))
         return wrapper
     return inner
@@ -29,4 +29,4 @@ def deposit(name, money):
     print("{} sends {} $!".format(name, money))
 
 
-deposit("Marto", 5)
+deposit("Marto", 'sad')
